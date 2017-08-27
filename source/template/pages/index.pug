@@ -1,7 +1,21 @@
 extends ../_template
 
+//-include ../blocks/header/header
+//-include ../blocks/footer/footer
+
+
 block variables
-  - var title = 'Home page'
+  - var title = 'Title'
 
 block content
-  include ../common/_greating
+    .wrapper
+        .main-content
+            header.header
+                //-+header()
+
+            main.main
+
+                section.section
+                    .container
+
+        //-+footer

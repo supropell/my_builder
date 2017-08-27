@@ -1,0 +1,29 @@
+// laptop
+
+@media screen and (max-width: 1200px) {
+ $container-width: 900px;
+
+  .container {
+    max-width: $container-width;
+  }
+}
+
+//tablet
+
+@media screen and (max-width: 940px) {
+  $container-width: 620px;
+
+  .container {
+    max-width: $container-width;
+  }
+}
+
+//smart-phones
+
+@media screen and (max-width: 740px) {
+  $container-width: 90%;
+
+  .container {
+    max-width: $container-width;
+  }
+}

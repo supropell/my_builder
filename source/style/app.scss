@@ -1,6 +1,72 @@
-body {
+// colors
+$white: #fff;
+$black: #000;
+
+// blocks sises
+$container-width: 1085px;
+
+// fonts
+//$Raleway: Raleway, sans-serif;
+
+html {
+  height: 100%;
+}
+
+html, body {
+  background: $white;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
   margin: 0;
 }
 
-@import 'common/greating';
-@import 'sprite/sprite';
+body {
+  //font-family: $Raleway;
+  font-weight: 300;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto!important;
+  overflow: hidden;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+//@import '../template/blocks//';
+
+//@import '../template/blocks/header/header';
+//@import '../template/blocks/footer/footer';
+
+// media
+@import 'media/media';
+
